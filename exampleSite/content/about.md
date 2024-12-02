@@ -5,14 +5,19 @@ date: "2024-12-02"
 description: "About me"
 ---
 
-{{ $image := resources.Get "images/rhino.png" }}
-<img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}">
+<div align="center">
+  <img src="/images/rhino.png" width="225" height="auto" style="border-radius: 50%" />
+</div>
 
-A photo of me.
+# Links
 
----
+- <a href="/my-email.txt" target="_blank">My Email</a>
+- <a href="https://github.com/" target="_blank">GitHub</a>
+- <a href="https://scholar.google.de" target="_blank">Google Scholar</a>
 
-I'm a researcher at TUM, currently working at approximating dynamical systems from data.
+# About me
 
-- 2021 - B.Sc. Informatics TUM
-- 2024 - M.Sc. Informatics TUM
+Here can go your experience:
+- Working experience
+- Academic experience
+- ...
