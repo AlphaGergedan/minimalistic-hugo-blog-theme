@@ -91,4 +91,27 @@
   #back-to-top:hover {
       background-color: var(--bg_h);
   }
+
+  .post-button-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+  }
+
+  .post-button-container > a {
+    text-decoration: none;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: var(--bg_s);
+    color: var(--fg);
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: $radius;
+  }
+
+  .post-button-container > a:hover {
+    background-color: var(--bg_h);
+  }
 }

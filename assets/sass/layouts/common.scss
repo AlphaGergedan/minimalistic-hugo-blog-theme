@@ -224,3 +224,19 @@ main {
 .row {
   margin-left: 2rem;
 }
+
+.link {
+  text-decoration: none;
+}
+
+.img-caption {
+  display: block;
+  text-align: center;
+}
+
+.tldr {
+  display: block;
+  border: dotted;
+  padding: 1rem;
+  border-radius: 10px;
+}
