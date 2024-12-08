@@ -113,6 +113,7 @@
     display: flex;
     flex: 1 1 auto;
     margin: 1rem 0px;
+    align-items: center;
   }
 
   .post-image {
@@ -142,6 +143,7 @@
         color: var(--fg1);
       }
     }
+
     .post-metadata {
       font-size: 0.875rem;
       color: var(--fg2);
