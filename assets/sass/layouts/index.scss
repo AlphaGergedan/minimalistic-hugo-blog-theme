@@ -9,6 +9,7 @@
 
   @media (max-width: $mobile-breakpoint) {
     grid-template-columns: 1fr;
+    gap: $margin;
   }
 
   .sidebar {
@@ -16,6 +17,7 @@
 
     @media screen and (max-width: $mobile-breakpoint) {
       order: 1;
+      margin-top: $margin;
     }
 
     h3.taxonomy > a {
@@ -61,7 +63,7 @@
     flex: 1;
 
     @media screen and (max-width: $mobile-breakpoint) {
-      order: 1;
+      order: 0;
     }
 
     div.post-list > a {
@@ -114,6 +116,11 @@
     flex: 1 1 auto;
     margin: 1rem 0px;
     align-items: center;
+
+    @media screen and (max-width: $mobile-breakpoint) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 
   .post-image {
@@ -122,14 +129,29 @@
     object-fit: contain;
     padding: 20px;
     margin-right: 0.5rem;
+
+    @media screen and (max-width: $mobile-breakpoint) {
+      width: 100%;
+      height: auto;
+      padding: 10px;
+      margin-right: 0;
+    }
   }
 
   .post-content {
     flex: 1;
 
+    @media screen and (max-width: $mobile-breakpoint) {
+      width: 100%;
+    }
+
     .post-header {
       display: flex;
       flex-wrap: wrap;
+
+      @media screen and (max-width: $mobile-breakpoint) {
+        flex-direction: column;
+      }
     }
 
     .post-title {
@@ -142,11 +164,21 @@
       &:hover {
         color: var(--fg1);
       }
+
+      @media screen and (max-width: $mobile-breakpoint) {
+        font-size: 1.1rem;
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+      }
     }
 
     .post-metadata {
       font-size: 0.875rem;
       color: var(--fg2);
+
+      @media screen and (max-width: $mobile-breakpoint) {
+        font-size: 0.75rem;
+      }
     }
   }
 }

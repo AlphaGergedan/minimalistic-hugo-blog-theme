@@ -68,6 +68,11 @@ hr {
   flex-direction: row;
   justify-content: space-between;
   margin-top: 2rem;
+
+  @media screen and (max-width: $mobile-breakpoint) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 ::-webkit-scrollbar {
@@ -95,6 +100,10 @@ hr {
 
     @media screen and (min-width: $mobile-breakpoint) {
       font-size: 2.8rem;
+    }
+
+    @media screen and (max-width: $mobile-breakpoint) {
+      font-size: 2rem;
     }
   }
 
@@ -131,6 +140,11 @@ hr {
         transform: scaleX(1);
         transform-origin: bottom left;
       }
+
+      @media screen and (max-width: $mobile-breakpoint) {
+        font-size: 1rem;
+        margin: 0.5rem;
+      }
     }
   }
 
@@ -144,6 +158,10 @@ hr {
 // main
 main {
   margin: 0 $margin;
+
+  @media screen and (max-width: $mobile-breakpoint) {
+    margin: 0;
+  }
 }
 
 #main {
@@ -153,7 +171,7 @@ main {
   flex-grow: 1;
   max-width: 100%;
   padding: 0;
-  width: calc(100% - 2rem); // TODO
+  width: calc(100% - 2rem);
 
   @media screen and (max-width: $mobile-breakpoint) {
     width: 100%;
@@ -182,6 +200,10 @@ main {
   justify-content: space-between;
   margin-top: 1rem;
   flex-wrap: wrap;
+
+  @media screen and (max-width: $mobile-breakpoint) {
+    justify-content: center;
+  }
 }
 
 .dark-mode-toggle {
@@ -200,10 +222,8 @@ main {
     color: var(--fg1);
   }
 
-  @media screen {
-    @media screen and (max-width: $mobile-breakpoint) {
-      right: calc((4px + $margin) / 2);
-    }
+  @media screen and (max-width: $mobile-breakpoint) {
+    right: calc((4px + $margin) / 2);
   }
 }
 
@@ -223,6 +243,10 @@ main {
 
 .row {
   margin-left: 2rem;
+
+  @media screen and (max-width: $mobile-breakpoint) {
+    margin-left: 0;
+  }
 }
 
 .link {
