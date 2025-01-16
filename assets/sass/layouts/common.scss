@@ -264,3 +264,7 @@ main {
   padding: 1rem;
   border-radius: 10px;
 }
+
+summary {
+  user-select: none;
+}
